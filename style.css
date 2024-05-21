@@ -1,0 +1,102 @@
+.monkey{
+ height: 200px;
+ width: 200px;
+ background-color: yellow   ;
+ border-radius: 50%;
+ box-shadow: 0 0 50px 5px yellow;
+ transition-duration: 5s;
+ position: absolute;
+ bottom: 0;
+ animation-name: monkey;
+ animation-duration: 10s;
+ animation-iteration-count: infinite;
+ animation-timing-function:ease-out;
+ 
+}
+@keyframes monkey {
+    0%{
+        z-index: 5;
+        }
+    50%{
+        margin-left: 500px;
+        margin-bottom: 300px;
+        box-shadow: 0 0 500px 1500px orange
+        ,0 0 100px 50px yellow;
+        z-index: 5;
+
+    }
+    100%{
+        margin-left: 1050px;
+        margin-bottom: 0;
+        box-shadow: 0 0 100px 50px whitesmoke,
+        0 0 500px 2000px black;
+        background-color: white;
+            }
+   
+    
+}
+.star{
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    background-color: white;
+    box-shadow: 0 0 20px 10px white;
+    animation-name: star;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes star{
+    from  {
+        z-index: -1;
+     
+    }
+    to{
+        opacity: 0;
+        box-shadow: 0 0 20px 5px white;
+    }
+}
+.two{
+    position: absolute;
+    right: 0;
+}
+.three{
+    position:absolute;
+    left: 100px;
+}
+.four{
+    position:absolute;
+    left: 350px;
+    top: 500px;
+}
+.five{
+    position:absolute;
+    left: 550px;
+    top: 250px;
+}
+.six{
+    position:absolute;
+    left: 700px;
+    top: 450px;
+}
+.seven{
+    position:absolute;
+    left: 750px;
+    top: 650px;
+}
+.eight{
+    position:absolute;
+    left: 50px;
+    top: 650px;
+}
+.nine{
+    position:absolute;
+    left: 150px;
+    top: 550px;
+}
+.ten{
+    position:absolute;
+    left: 650px;
+    top: 150px;
+}
